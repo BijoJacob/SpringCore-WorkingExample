@@ -4,12 +4,12 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-   
-   
-   <bean id="employee" class="com.personal.springcore.bean.Employee">
-   	<property name="firstName" value="Bijo"></property>
-   	<property name="lastName"  value="Jacob"></property>
-   </bean>
-   
+
+
+	<bean id="employee" class="com.personal.springcore.bean.Employee">
+		<property name="firstName" value="Bijo"></property>
+		<property name="lastName" value="Jacob"></property>
+	</bean>
+
 
 </beans>
