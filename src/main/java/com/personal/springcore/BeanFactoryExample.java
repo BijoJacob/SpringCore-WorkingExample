@@ -12,7 +12,12 @@ public class BeanFactoryExample {
 	public static void main(String[] args) {
 		Resource resource = new ClassPathResource("beans-definition.xml");
 		BeanFactory beanFactory = new XmlBeanFactory(resource);
-		Employee emp = (Employee) beanFactory.getBean("employee");
-		System.out.println("First Name= "+emp.getFirstName() + "\t" + "Last Name= "+emp.getLastName());
+		Object employeeObject = beanFactory.getBean("employee");
+		if (employeeObject != null) {
+			Employee employee = (Employee) employeeObject;
+			System.out
+					.println("First Name= " + employee.getFirstName() + "\t" + "Last Name= " + employee.getLastName());
+		}
+
 	}
 }
