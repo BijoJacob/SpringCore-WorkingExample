@@ -6,9 +6,8 @@
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 
-	<bean id="employee" class="com.personal.springcore.bean.Employee" scope="singleton">
-		<property name="firstName" value="Bijo"></property>
-		<property name="lastName" value="Jacob"></property>
+	<bean id="employee" class="com.personal.springcore.bean.Employee" scope="prototype">
+
 	</bean>
 
 
