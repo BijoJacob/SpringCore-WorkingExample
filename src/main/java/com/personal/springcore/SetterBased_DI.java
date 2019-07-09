@@ -16,7 +16,7 @@ public class SetterBased_DI {
 		System.out.println("Team memebers team Name =" + teamMember.getTeam().getTeamName());
 
 		Team team = appContext.getBean("team", Team.class);
-		System.out.println("Team Name =" + team.getTeamName());
+		System.out.println("Team Name = " + team.getTeamName());
 
 		appContext.close();
 
